@@ -36,4 +36,4 @@
 - 阻塞(Blocked): 在程序等待进入同步区域的时候，线程将进入这种状态~
 - 结束(Terminated): 已终止线程的线程状态，线程已经结束执行
 ## _Java Virtual Machine Parameters Settings_
-![](https://github.com/lixingluo/JVM-Parameter/blob/master/Res/%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2%E5%85%B3%E7%B3%BB%E5%9B%BE.jpeg "JVM参数列表")
+![](https://github.com/lixingluo/JVM-Parameter/blob/master/Res/JVM%E5%8F%82%E6%95%B0%E5%88%97%E8%A1%A8.jpeg "JVM参数列表")
