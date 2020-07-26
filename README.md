@@ -35,3 +35,5 @@
 - 限期等待(Timed Waiting): 处于这种状态的线程不会被分配处理器执行时间，在一定时间之后他们会由系统自动唤醒。sleep()方法会进入该状态~
 - 阻塞(Blocked): 在程序等待进入同步区域的时候，线程将进入这种状态~
 - 结束(Terminated): 已终止线程的线程状态，线程已经结束执行
+## _Java Virtual Machine Parameters Settings_
+![](https://github.com/lixingluo/JVM-Parameter/blob/master/Res/%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2%E5%85%B3%E7%B3%BB%E5%9B%BE.jpeg "JVM参数列表")
