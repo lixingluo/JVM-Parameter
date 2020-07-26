@@ -26,3 +26,12 @@
 - 线程的工作内存中保存了该线程中是用到的变量的主内存副本拷贝
 - 线程对变量的所有操作都必须在工作内存中进行，而不能直接读写主内存。
 - 不同的线程之间也无法直接访问对方工作内存中的变量，线程间变量的传递均需要自己的工作内存和主存之间进行数据同步进行
+## _Java Thread Status Transfer Relational Structure_
+![](https://github.com/lixingluo/JVM-Parameter/blob/master/Res/%E7%BA%BF%E7%A8%8B%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2%E5%85%B3%E7%B3%BB%E5%9B%BE.jpeg "线程状态转换")
+### Java定义了6种线程池状态：
+- 新建(New): 创建后尚未启动的线程处于这种状态
+- 运行(Running): 线程开启start()方法，会进入该状态。
+- 无限等待(Waiting): 处于这种状态的线程不会被分配处理器执行时间，一般LockSupport::park()，没有设置了Timeoout的Object::wait()方法，会让线程陷入无限等待状态
+- 限期等待(Timed Waiting): 处于这种状态的线程不会被分配处理器执行时间，在一定时间之后他们会由系统自动唤醒。sleep()方法会进入该状态~
+- 阻塞(Blocked): 在程序等待进入同步区域的时候，线程将进入这种状态~
+- 结束(Terminated): 已终止线程的线程状态，线程已经结束执行
